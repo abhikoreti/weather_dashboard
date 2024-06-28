@@ -1,0 +1,21 @@
+{% extends "layout.html" %} {% block content %}
+<div class="row mt-5">
+    <div class="col-12">
+        <h1 class="text-center">Historical Weather Data</h1>
+        <div class="input-group mb-3">
+            <input
+                type="text"
+                id="historical-city"
+                class="form-control"
+                placeholder="Enter city name for historical data"
+            />
+            <div class="input-group-append">
+                <button class="btn btn-primary" onclick="getHistoricalData()">
+                    Get Data
+                </button>
+            </div>
+        </div>
+        <div id="historical-data"></div>
+    </div>
+</div>
+{% endblock %}

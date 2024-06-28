@@ -23,6 +23,30 @@ def forecast():
 def favorite_cities():
     return render_template('favorite_cities.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+@app.route('/historical_weather')
+def historical_weather():
+    return render_template('historical_weather.html')
+
+@app.route('/weather_alerts')
+def weather_alerts():
+    return render_template('weather_alerts.html')
+
+@app.route('/profile')
+def profile():
+    return render_template('profile.html')
+
+@app.route('/weather_news')
+def weather_news():
+    return render_template('weather_news.html')
+
 @app.route('/weather', methods=['GET'])
 def get_weather():
     city = request.args.get('city')
