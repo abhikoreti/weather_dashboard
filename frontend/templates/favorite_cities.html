@@ -1,0 +1,17 @@
+{% extends "layout.html" %} {% block content %}
+<h2 class="text-center mt-5">Favorite Cities</h2>
+<div class="input-group mb-3">
+    <input
+        type="text"
+        id="favorite-city"
+        class="form-control"
+        placeholder="Add favorite city"
+    />
+    <div class="input-group-append">
+        <button class="btn btn-secondary" onclick="addFavoriteCity()">
+            Add
+        </button>
+    </div>
+</div>
+<ul id="favorite-cities" class="list-group"></ul>
+{% endblock %}

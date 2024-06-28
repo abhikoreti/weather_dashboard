@@ -1,0 +1,21 @@
+{% extends "layout.html" %} {% block content %}
+<div class="row mt-5">
+    <div class="col-12">
+        <h1 class="text-center">WeatherWise</h1>
+        <div class="input-group mb-3">
+            <input
+                type="text"
+                id="city"
+                class="form-control"
+                placeholder="Enter city name"
+            />
+            <div class="input-group-append">
+                <button class="btn btn-primary" onclick="getWeather()">
+                    Get Weather
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" id="weather-info"></div>
+{% endblock %}
